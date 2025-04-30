@@ -1,128 +1,59 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import robot from "../../assets/robot.avif";
+import other from "../../assets/other.jpg"
+import { TbTriangleSquareCircle } from "react-icons/tb";
+import { BiWindows } from "react-icons/bi";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-
-
-// import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
-import SplineScene from '../StudentWork/Spline';
-import SplineSce from './SplineSce';
 
 const Banner = () => {
     return (
-        <div >
-                <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div className='relative flex container'>
-          <img className='md:h-[850px] w-full' src="https://i.ibb.co/M6zyCQF/feliphe-schiarolli-hes6n-UC1-MVc-unsplash.jpg" />
-          <div className="absolute h-full rounded-xl flex items-center transform  left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
-        <div data-aos="zoom-in-up"
-     data-aos-easing="linear"
-     data-aos-duration="1500"
-         className="text-white space-y-7 pl-12 md:w-1/2">
-            <h1 className="md:text-6xl text-2xl font-bold text-blue-200">Student of Southeast</h1>
-            <p className='md:text-xl text-[10px]' >SEU Student Branch is a diverse and distinguished student organization at Southeast University of Science and Technology in Bangladesh. </p>
-            <div className="flex justify-center">
-           <form action="" className='flex justify-between'>
-           <input type="text" placeholder="Type here" className="input text-black input-bordered input-primary w-full max-w-xs" />
-           <input type="submit" className='bg-white rounded-lg text-blue-700 btn ' value="Search" />
-           </form>
-               
+       <div className="bg-white">
+            <div className=" container mx-auto border-2 py-20 flex justify-between ">
+          <div className="border flex-1">
+             <h1 className="text-black text-8xl mb-10">Your AI- <br /> Powered <br /> Sales Coach</h1>
+             <div className="flex mb-10 justify-between">
+              <div className=" bg-slate-50 shadow-lg"> <img className="h-44 rounded-xl" src={robot} alt="" /></div>
+              <p className="text-2xl ml-20">Get real-time coaching, script <br /> suggestion, and deal-closing <br /> strategies powered by advanced AI <br /> technology</p>
+             </div>
+
+           <div className="flex justify-between text-black">
+
+            <div className="flex items-center ">
+                <div className="text-7xl text-blue-500 mr-10 bg-slate-50 p-4 shadow-xl rounded-lg">
+                <BiWindows></BiWindows>
+                </div>
+                <h1 className="text-4xl font-bold ">2000+ <br />
+                <span className="text-xl text-gray-500 font-normal">Your protection</span></h1>
+                
+              </div>
+              
+              <div className="flex items-center">
+                <div className="text-7xl text-blue-500 mr-10  bg-slate-50 p-4 shadow-xl rounded-lg">
+                <TbTriangleSquareCircle ></TbTriangleSquareCircle>
+                </div>
+                <h1 className="text-4xl font-bold">7001+ <br />
+                <span className="text-xl font-normal text-gray-500">Provide tailored</span></h1>
+              </div>
+              
             </div>
-        </div>
-        <div className='w-1/3 h-1/3'>
-         <SplineSce></SplineSce>
-        </div>
-    </div>
           </div>
 
-        </SwiperSlide>
-        <SwiperSlide>
-          
-          <div className='relative'>
-          <img className='md:h-[850px] w-full' src="https://i.ibb.co/MGrXQL4/kenny-eliason-z-FSo6bn-ZJTw-unsplash.jpg" />
-          <div className="absolute h-full rounded-xl flex items-center transform  left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
-        <div data-aos="zoom-in-up"
-     data-aos-easing="linear"
-     data-aos-duration="1500"
-         className="text-white space-y-7 pl-12 md:w-1/2">
-            <h1 className="md:text-6xl text-2xl font-bold text-blue-200">Student of Southeast</h1>
-            <p className='md:text-xl text-[10px]' >SEU Student Branch is a diverse and distinguished student organization at Southeast University of Science and Technology in Bangladesh. </p>
-            <div className="flex justify-center">
-           <form action="" className='flex justify-between'>
-           <input type="text" placeholder="Type here" className="input text-black input-bordered input-primary w-full max-w-xs" />
-           <input type="submit" className='bg-white rounded-lg text-blue-700 btn ' value="Search" />
-           </form>
-               
+          <div className="border flex-1">
+            <div className="relative">
+              <img className="w-[400px]" src={other} alt="" />
+              <div className="w-max absolute  h-72 border-blue-300 p-10 bg-white shadow-2xl rounded-2xl"> 
+                <div className="flex justify-between">
+                  <h1 className="text-5xl pb-4  text-blue-800 font-bold">721+</h1>
+                  <h1 className="text-5xl pb-4 text-blue-800 font-bold">1000+</h1>
+                </div>
+                <h1 className="text-3xl text-black font-bold">Growth is our priority</h1>
+                <p>As a full-service business agency, we <br />specialize in helping companies of all sizes <br /> optimize their operations</p>
+              </div>
+
             </div>
-        </div>
-    </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='relative'>
-          <img className='md:h-[850px] w-full' src="https://i.ibb.co/q1ZNP1R/arthur-lambillotte-Om8-Wd-Pm74-RM-unsplash.jpg" />
-          <div className="absolute h-full rounded-xl flex items-center transform  left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
-        <div data-aos="zoom-in-up"
-     data-aos-easing="linear"
-     data-aos-duration="1500"
-         className="text-white space-y-7 pl-12 md:w-1/2">
-           <h1 className="md:text-6xl text-2xl font-bold text-blue-200">Student of Southeast</h1>
-           <p className='md:text-xl text-[10px]' >SEU Student Branch is a diverse and distinguished student organization at Southeast University of Science and Technology in Bangladesh. </p>
-            <div className="flex justify-center">
-           <form action="" className='flex justify-between'>
-           <input type="text" placeholder="Type here" className="input text-black input-bordered input-primary w-full max-w-xs" />
-           <input type="submit" className='bg-white rounded-lg text-blue-700 btn ' value="Search" />
-           </form>
                
-            </div>
         </div>
-    </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='relative'>
-          <img className='md:h-[850px] w-full' src="https://i.ibb.co/r6T3n7J/alam-kusuma-g7-O1rq-MVre-U-unsplash.jpg" />
-          <div className="absolute h-full rounded-xl flex items-center transform  left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
-        <div data-aos="zoom-in-up"
-     data-aos-easing="linear"
-     data-aos-duration="1500"
-         className="text-white space-y-7 pl-12 md:w-1/2">
-           <h1 className="md:text-6xl text-2xl font-bold text-blue-200">Student of Southeast</h1>
-           <p className='md:text-xl text-[10px]' >SEU Student Branch is a diverse and distinguished student organization at Southeast University of Science and Technology in Bangladesh. </p>
-            <div className="flex justify-center">
-           <form action="" className='flex justify-between'>
-           <input type="text" placeholder="Type here" className="input text-black input-bordered input-primary w-full max-w-xs" />
-           <input type="submit" className='bg-white rounded-lg text-blue-700 btn ' value="Search" />
-           </form>
-               
-            </div>
-        </div>
-    </div>
-          </div>
-        </SwiperSlide>
-       
-      
-      </Swiper>
-        </div>
+       </div>
     );
 };
 

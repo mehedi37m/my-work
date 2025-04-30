@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { GoUnread } from "react-icons/go";
+
 import logo from "../../assets/logo.jpg";
 
 const NavBar = () => {
@@ -9,30 +9,26 @@ const NavBar = () => {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/dashboard">About</Link>
       </li>
       <li>
-        <Link to="/menu">Menu</Link>
+        <Link to="/menu">Pricing</Link>
       </li>
       <li>
-        <Link to="/activity">Activity</Link>
+        <Link to="/activity">Consulting</Link>
       </li>
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact">Al Coach</Link>
       </li>
 
-      <Link to="/dashboard/cart">
-        <button className="btn btn-ghost">
-          <GoUnread className="mr-2"></GoUnread>
-          {/* <div className="badge badge-secondary">+{cart.length}</div> */}
-        </button>
-      </Link>
+      
     </>
   );
 
   return (
-    <div className=" ">
-      <div className="navbar fixed z-10  bg-opacity-30 bg-black text-white">
+    <div className="bg-white">
+      <div className="container mx-auto  text-black">
+      <div className=" container mx-auto flex justify-items-center items-center justify-between  z-10  bg-opacity-30 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -58,16 +54,23 @@ const NavBar = () => {
               {navLink}
             </ul>
           </div>
-          <Link to="/" className="btn btn-ghost normal-case text-xl">
+         <div className="flex justify-start">
+         <Link to="/" className="btn btn-ghost normal-case text-xl">
             <img className="h-8" src={logo} alt="" />
             CSE SEU Student
           </Link>
-        </div>
-        <div className="navbar-center hidden lg:flex">
+          <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
+        </div>
+         </div>
+        </div>
+       
+        <div className="border rounded-full px-6 py-2">
+          <button>Get Started</button>
         </div>
        
       </div>
+    </div>
     </div>
   );
 };
