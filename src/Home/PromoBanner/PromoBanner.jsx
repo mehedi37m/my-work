@@ -1,24 +1,93 @@
-import { Link } from "react-router-dom";
-import promo from "../../assets/hello.jpg"
+import pic1 from "../../assets/programming1.jpeg";
+import pic2 from "../../assets/programming1.webp";
+
 
 
 const PromoBanner = () => {
-    return (
-        <div className="mt-16 py-12 bg-teal-100 px-4 lg:px-24">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-                <div className="md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6 leading-snug">2024 National Book Awards for Fiction Shortlist</h1>
-
-                    <Link to='/shop' className=' block' ><button className='bg-blue-700 text-white font-semibold px-5 py-2 rounded hover:bg-black transition-all duration-300'>Explore More</button></Link>
-                    
-                </div>
-
-                <div>
-                    <img src={promo} alt="" className="w-96 " />
-                </div>
-            </div>
+  return (
+    <div className="bg-white py-10">
+      <div className="container mx-auto space-y-10">
+        <div className="flex items-center justify-between">
+          <div className="space-y-5">
+            <h1 className="text-4xl font-bold text-black">Our Courses</h1>
+            <h1 className="text-xl  text-black">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus accusamus <br /> suscipit quas reprehenderit obcaecati
+              cumque veniam .
+            </h1>
+          </div>
+          <button className=" rounded-xl bg-blue-900 text-white py-5 px-5 hover:bg-yellow-700">
+            View All{" "}
+          </button>
         </div>
-    );
+
+        <div className="flex justify-between gap-5">
+          <div className="bg-slate-100 p-8 rounded-lg w-[700px] ">
+            <div className="card text-black  shadow-sm">
+              <figure>
+                <img className="h-96"
+                  src={pic1}
+                  alt="robot"
+                />
+              </figure>
+              <div className="pt-5 flex justify-between items-center">
+                <div className=" flex justify-start  gap-5">
+                  <div className="py-2 px-3 bg-white rounded-lg ">4 Weeks</div>
+                  <div className="py-2 px-3 bg-white rounded-lg ">Beginner</div>
+                </div>
+                <h1>By John Smith</h1>
+              </div>
+              <div className=" pt-7 space-y-5 ">
+                <h2 className="card-title">
+                  Web Design Fundamentals
+                  <div className="badge badge-secondary">NEW</div>
+                </h2>
+                <p>
+                  Learn the fundamentals of web design, including HTML, CSS and
+                  responsive design principles. Develop the skills to create
+                  visually appealing.
+                </p>
+                <button className="btn btn-block bg-blue-900 text-white">
+                  Get it Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="bg-slate-100 p-8 rounded-lg w-[700px] ">
+            <div className="card text-black  shadow-sm">
+              <figure>
+                <img className="h-96"
+                   src={pic2}
+                  alt="robot"
+                />
+              </figure>
+              <div className="pt-5 flex justify-between items-center">
+                <div className=" flex justify-start  gap-5">
+                  <div className="py-2 px-3 bg-white rounded-lg ">4 Weeks</div>
+                  <div className="py-2 px-3 bg-white rounded-lg ">Beginner</div>
+                </div>
+                <h1>By John Smith</h1>
+              </div>
+              <div className=" pt-7 space-y-5 ">
+                <h2 className="card-title">
+                  Web Design Fundamentals
+                  <div className="badge badge-secondary">NEW</div>
+                </h2>
+                <p>
+                  Learn the fundamentals of web design, including HTML, CSS and
+                  responsive design principles. Develop the skills to create
+                  visually appealing.
+                </p>
+                <div className=""><button className="btn btn-block bg-blue-900 text-white">
+                  Get it Now
+                </button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default PromoBanner;
