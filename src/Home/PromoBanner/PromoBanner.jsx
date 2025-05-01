@@ -7,7 +7,7 @@ const PromoBanner = () => {
   return (
     <div className="bg-white py-10">
       <div className="container mx-auto space-y-10">
-        <div className="flex items-center justify-between">
+        <div className="md:flex items-center justify-between">
           <div className="space-y-5">
             <h1 className="text-4xl font-bold text-black">Our Courses</h1>
             <h1 className="text-xl  text-black">
@@ -21,8 +21,8 @@ const PromoBanner = () => {
           </button>
         </div>
 
-        <div className="flex justify-between gap-5">
-          <div className="bg-slate-100 p-8 rounded-lg w-[700px] ">
+        <div className="md:flex justify-between gap-5">
+          <div className="bg-slate-100 p-8 rounded-lg md:w-[700px] ">
             <div className="card text-black  shadow-sm">
               <figure>
                 <img className="h-96"
@@ -53,7 +53,7 @@ const PromoBanner = () => {
               </div>
             </div>
           </div>
-          <div className="bg-slate-100 p-8 rounded-lg w-[700px] ">
+          <div className="bg-slate-100 p-8 rounded-lg md:w-[700px] ">
             <div className="card text-black  shadow-sm">
               <figure>
                 <img className="h-96"

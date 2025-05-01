@@ -20,9 +20,9 @@ const StudentWork = () => {
       <div className="container mx-auto">
         <h1 className="text-2xl text-yellow-500 mb-5">Live Ai Coach</h1>
         <h1 className="text-5xl text-blue-100">Take a Suggestion Coaching</h1>
-        <div className="flex items-center gap-10">
-          <div className="flex items-center gap-10  mt-10">
-            <div className="flex-1 h-[500px] bg-white rounded-2xl shadow-lg p-4">
+        <div className="md:flex items-center gap-10">
+          <div className="md:flex items-center gap-10  mt-10">
+            <div className="flex-1 md:h-[500px] bg-white rounded-2xl shadow-lg p-4">
               <div className="border-b pb-3 mb-3">
                 <h2 className="text-lg font-semibold">AI Sales Coach</h2>
               </div>

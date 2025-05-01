@@ -48,8 +48,8 @@ const Constant = () => {
             question
           </h1>
         </div>
-        <h1 className="text-5xl flex justify-center pb-10 text-black ">
-          Constant collaboration is how we <br /> roll. Let's See if we are a
+        <h1 className="text-2xl md:text-5xl flex justify-center pb-10 text-black ">
+          Constant collaboration is how we <br /> roll. Lets See if we are a
           good fit.
         </h1>
 
@@ -100,7 +100,7 @@ const Constant = () => {
 
         <div>
           <div className=" mx-auto px-6 py-12  text-gray-900 font-sans">
-            <blockquote className="text-2xl md:text-3xl h-56 font-medium leading-relaxed">
+            <blockquote className="text-2xl md:text-3xl md:h-56 font-medium leading-relaxed">
               “{testimonial.text}”
             </blockquote>
 
